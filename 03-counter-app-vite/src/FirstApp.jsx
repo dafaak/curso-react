@@ -6,7 +6,7 @@ function upperCase(string) {
     return string.toUpperCase();
 }
 
-export const FirstApp = ({title, number}) => {
+export const FirstApp = ({title, number = 1, name}) => {
     const nombre = 'Israel';
     const newMessage = {
         nombre: 'Israel',
@@ -18,7 +18,7 @@ export const FirstApp = ({title, number}) => {
 
     return (
         <>
-            <h1>Hola {upperCase(nombre)}!</h1>
+            <h1>Hola {upperCase(name)}!</h1>
             <h1> {title} {number + 1}</h1>
             {/*<code>{JSON.stringify(newMessage)}</code>*/}
             <code>{JSON.stringify(newMessage)}</code>
@@ -29,4 +29,9 @@ export const FirstApp = ({title, number}) => {
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     number: PropTypes.number,
+}
+FirstApp.defaultProps = {
+    title: 'No hay titulo',
+    number: 'No hay numeros',
+    name: 'Israel'
 }
