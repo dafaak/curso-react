@@ -12,6 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/*<App></App>*/}
         <HelloWorldApp/>
-        <FirstApp title="Titulito de las props"/>
+        <FirstApp title="Titulito" numero={123}/>
     </React.StrictMode>
 );
