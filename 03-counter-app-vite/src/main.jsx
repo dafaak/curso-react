@@ -11,7 +11,7 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/*<App></App>*/}
-        <HelloWorldApp></HelloWorldApp>
-        <FirstApp></FirstApp>
+        <HelloWorldApp/>
+        <FirstApp title="Titulito de las props"/>
     </React.StrictMode>
 );
