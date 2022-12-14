@@ -16,7 +16,8 @@ describe('Pruebas funciones', () => {
         test('getUserActivo debe retornar un objeto con la propiedad nombre=Israel', () => {
                 const nombre = 'Israel';
                 const usuarioActivo = getUsuarioActivo(nombre);
-                expect(usuarioActivo).toEqual(expect.objectContaining({username: nombre}));
+                // expect(usuarioActivo).toEqual(expect.objectContaining({username: nombre}));
+                expect(usuarioActivo).toStrictEqual({uid: 'ABC567', username: nombre});
 
             }
         )
