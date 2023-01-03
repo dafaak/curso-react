@@ -19,7 +19,7 @@ export const FirstApp = ({title, number = 1, name}) => {
     return (
         <>
             <h1>Hola {upperCase(name)}!</h1>
-            <h1> {title} {number + 1}</h1>
+            <h1> {title} {number}</h1>
             {/*<code>{JSON.stringify(newMessage)}</code>*/}
             <code>{JSON.stringify(newMessage)}</code>
         </>
@@ -29,6 +29,7 @@ export const FirstApp = ({title, number = 1, name}) => {
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     number: PropTypes.number,
+    name: PropTypes.string
 }
 FirstApp.defaultProps = {
     title: 'No hay titulo',

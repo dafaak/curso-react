@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/*<App></App>*/}
         {/*<HelloWorldApp/>*/}
-        {/*<FirstApp />*/}
-        <CounterApp value={2}></CounterApp>
+        <FirstApp title='titulito'  />
+        {/*<CounterApp value={2}></CounterApp>*/}
     </React.StrictMode>
 );
